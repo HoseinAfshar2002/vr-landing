@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    /* overflow-x: hidden; */
+  font-family: "Montserrat";
+  background-color: #171115;
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.head {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.active {
+  background-color: #7522a2;
+  padding: 10px;
+  border-radius: 20px;
+}
+.pattern {
+  position: absolute;
+  right: 0;
+  top: 14px;
+}
+.shadow {
+  background-color: #650859;
+  height: 220px;
+  width: 190px;
+  position: absolute;
+  left: -45px;
+  top: -1px;
+  border-radius: 100%;
+  filter: blur(45px);
+}
+.arrow {
+  width: 40px;
+  animation: updown 0.5s linear infinite alternate;
+}
+.sidebar {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  gap: 19px;
+}
+.sidebar span {
+  transform: rotate(90deg);
+}
+.icons i {
+  cursor: pointer;
+  background-color: #fff;
+  color: #7522a2;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  text-align: center;
+  padding-bottom: 28px;
+  font-size: 15px;
+  padding: 8px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+.icons li i:hover {
+  background-color: #7522a2;
+  color: #fff;
+}
+@keyframes updown {
+    100%{
+        transform: translateY(2rem);
+    }
+}
+section{
+    height: 100%;
+    
+}
+.pattern2{
+    position: absolute;
+    bottom: 5;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    position: absolute;
+    top: 480px;
+    left: 280px;
+    color: #fff;
+   
+}
+.content h1{
+  font-size: 80px;
+ 
+}
+.content button{
+width:250px;
+ background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #7522a2;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  margin: 7px;
+}
+.content p{
+    width: 65%;
+     margin-top: 10px;
+     font-size: 12px;
+   }
+   .main-pic{
+    position: absolute;
+    right: 60px;
+    bottom:  50px;
+   }
+   .shadow1 {
+   
+    background-color: #650859;
+    height: 240px;
+    width: 200px;
+    position: absolute;
+    right:   -45px;
+    bottom:  1px;
+    border-radius: 100%;
+    filter: blur(45px);
+  }
+
+  @media screen and (max-width:999px) {
+    .nav-bar {
+       width: 57%; 
+    }
+    .main {
+        width: 20rem;
+        right: -5rem;
+        bottom: -55px;
+    }
+    .conetnt {
+        padding-left: 17%;
+    }
+
+    .conetnt h1 {
+        font-size: 2rem;
+    }
+}
