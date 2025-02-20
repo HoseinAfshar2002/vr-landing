@@ -37,7 +37,7 @@ a {
   border-radius: 20px;
 }
 .pattern {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 14px;
 }
@@ -98,7 +98,7 @@ section{
     
 }
 .pattern2{
-    position: absolute;
+    position: fixed;
     bottom: 5;
 }
 .content{
